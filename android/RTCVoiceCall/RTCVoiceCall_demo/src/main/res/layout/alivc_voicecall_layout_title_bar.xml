@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alivc_voicecall_rl_content"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_gravity="center_vertical"
+        android:id="@+id/alivc_voicecall_title_bar_ib_back"
+        android:layout_marginLeft="@dimen/alivc_voicecall_padding_20"
+        android:layout_width="wrap_content"
+        android:background="@null"
+        android:src="@mipmap/aliyun_voicecall_icon_back"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/alivc_voicecall_margin_10"
+        android:layout_marginRight="@dimen/alivc_voicecall_margin_10"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/alivc_voicecall_title_bar_tv_title"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textColor="@color/black_alpha_50"
+        android:textSize="@dimen/alivc_voicecall_size_text_17"
+        android:maxLines="1"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent"/>
+
+<!--    <android.support.v7.widget.RecyclerView-->
+<!--        android:orientation="horizontal"-->
+<!--        android:id="@+id/alivc_voicecall_title_bar_rcy_menu"-->
+<!--        android:layout_marginRight="@dimen/dimen_10"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:id="@+id/alivc_voicecall_ll_menu"
+        android:layout_marginRight="@dimen/alivc_voicecall_padding_20"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/alivc_voicecall_iv_icon_menu"
+            android:layout_width="@dimen/alivc_voicecall_padding_20"
+            android:layout_height="@dimen/alivc_voicecall_padding_20"/>
+
+        <TextView
+            android:visibility="gone"
+            android:textSize="@dimen/alivc_voicecall_size_text_10"
+            android:id="@+id/alivc_voicecall_tv_menu_name"
+            android:layout_marginTop="@dimen/alivc_voicecall_margin_6"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

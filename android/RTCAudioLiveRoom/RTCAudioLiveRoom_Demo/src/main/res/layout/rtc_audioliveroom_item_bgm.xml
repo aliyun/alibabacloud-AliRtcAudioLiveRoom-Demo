@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/alirtc_audioliveroom_margin_22"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/rtc_audioliveroom_tv_bgm_name"
+        android:textSize="@dimen/alirtc_audioliveroom_size_text_12"
+        android:textColor="@color/alirtc_audioliveroom_color_text_earback"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:id="@+id/rtc_audioliveroom_progress"
+        android:layout_marginLeft="@dimen/alirtc_audioliveroom_margin_2"
+        android:max="100"
+        android:min="0"
+        android:splitTrack="false"
+        android:maxHeight="@dimen/alirtc_audioliveroom_margin_4"
+        android:thumb="@drawable/rtc_audioliveroom_seekbar_thumb_shape"
+        android:progressDrawable="@drawable/rtc_audioliveroom_bg_seekbar_shape"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="fitCenter"
+            android:id="@+id/rtc_audioliveroom_iv_preplay"
+            android:layout_marginLeft="@dimen/alirtc_audioliveroom_margin_10"
+            android:layout_width="@dimen/alirtc_audioliveroom_width_imageview_28"
+            android:layout_height="@dimen/alirtc_audioliveroom_width_imageview_28"/>
+        <ImageView
+            android:scaleType="fitCenter"
+            android:id="@+id/rtc_audioliveroom_iv_play"
+            android:layout_marginLeft="@dimen/alirtc_audioliveroom_margin_12"
+            android:layout_width="@dimen/alirtc_audioliveroom_width_imageview_28"
+            android:layout_height="@dimen/alirtc_audioliveroom_width_imageview_28"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="@dimen/alirtc_audioliveroom_margin_2"
+        android:id="@+id/rtc_audioliveroom_tv_earback"
+        android:textSize="@dimen/alirtc_audioliveroom_size_text_12"
+        android:text="@string/alirtc_audioliveroom_string_earback"
+        android:textColor="@color/alirtc_audioliveroom_color_text_earback"
+        android:layout_marginLeft="@dimen/alirtc_audioliveroom_margin_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Switch
+        android:id="@+id/rtc_audioliveroom_switch_earback"
+        android:layout_toRightOf="@id/rtc_audioliveroom_tv_earback"
+        android:track="@drawable/rtc_audioliveroom_swtich_track_selector"
+        android:thumb="@drawable/rtc_audioliveroom_swtich_thumb_selector"
+        android:layout_marginLeft="@dimen/alirtc_audioliveroom_margin_26"
+        android:layout_width="@dimen/alirtc_audioliveroom_width_switch_44"
+        android:layout_height="@dimen/alirtc_audioliveroom_width_iv_22"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/alirtc_audioliveroom_margin_2"
+        android:id="@+id/rtc_audioliveroom_tv_switch_state"
+        android:layout_marginLeft="@dimen/alirtc_audioliveroom_margin_10"
+        android:layout_toRightOf="@id/rtc_audioliveroom_switch_earback"
+        android:text="@string/alirtc_audioliveroom_string_switch_close"
+        android:textSize="@dimen/alirtc_audioliveroom_size_text_12"
+        android:textColor="@color/alirtc_audioliveroom_color_text_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/alirtc_audioliveroom_width_imageview_30"
+        android:layout_below="@id/rtc_audioliveroom_tv_earback"
+        android:id="@+id/rtc_audioliveroom_tv_effect_reverb"
+        android:textSize="@dimen/alirtc_audioliveroom_size_text_12"
+        android:text="@string/alirtc_audioliveroom_string_effect_reverb"
+        android:textColor="@color/alirtc_audioliveroom_color_text_earback"
+        android:layout_marginLeft="@dimen/alirtc_audioliveroom_margin_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.aliyun.rtc.audiochatroom.view.FlowLayout
+        android:id="@+id/rtc_audioliveroom_flowlayout_effect_reverb_mode"
+        android:layout_marginTop="@dimen/alirtc_audioliveroom_margin_24"
+        android:layout_below="@id/rtc_audioliveroom_switch_earback"
+        android:layout_marginLeft="@dimen/alirtc_audioliveroom_margin_26"
+        android:layout_toRightOf="@id/rtc_audioliveroom_tv_effect_reverb"
+        android:layout_width="@dimen/alirtc_audioliveroom_height_vedio_280"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/alirtc_audioliveroom_width_imageview_30"
+        android:layout_below="@id/rtc_audioliveroom_flowlayout_effect_reverb_mode"
+        android:id="@+id/rtc_audioliveroom_tv_effect_change"
+        android:textSize="@dimen/alirtc_audioliveroom_size_text_12"
+        android:text="@string/alirtc_audioliveroom_string_effect_change"
+        android:textColor="@color/alirtc_audioliveroom_color_text_earback"
+        android:layout_marginLeft="@dimen/alirtc_audioliveroom_margin_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.aliyun.rtc.audiochatroom.view.FlowLayout
+        android:id="@+id/rtc_audioliveroom_flowlayout_effect_change_mode"
+        android:layout_marginTop="@dimen/alirtc_audioliveroom_margin_24"
+        android:layout_below="@id/rtc_audioliveroom_flowlayout_effect_reverb_mode"
+        android:layout_marginLeft="@dimen/alirtc_audioliveroom_margin_26"
+        android:layout_toRightOf="@id/rtc_audioliveroom_tv_effect_change"
+        android:layout_width="@dimen/alirtc_audioliveroom_height_vedio_280"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

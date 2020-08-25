@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="@dimen/alivc_voicecall_margin_10"
+    android:layout_width="@dimen/alivc_voicecall_width_iv_100"
+    android:layout_height="@dimen/alivc_voicecall_margin_150">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/alivc_voicecall_item_bg_tv_bg"
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/alivc_voicecall_width_iv_100"
+        android:layout_height="@dimen/alivc_voicecall_height_iv_130"/>
+
+    <ImageView
+        android:id="@+id/alivc_voicecall_item_bg_iv_checkbox"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/alivc_voice_call_bg_checked_selector"
+        android:layout_marginBottom="@dimen/alivc_voicecall_margin_26"
+        android:layout_marginRight="@dimen/alivc_voicecall_margin_6"
+        android:layout_width="@dimen/alivc_voicecall_width_iv_22"
+        android:layout_height="@dimen/alivc_voicecall_width_iv_22"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/alivc_voicecall_tv_bg_name"
+        android:textSize="@dimen/alivc_voicecall_size_text_13"
+        android:textColor="@color/alivc_voicecall_color_text_gray"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

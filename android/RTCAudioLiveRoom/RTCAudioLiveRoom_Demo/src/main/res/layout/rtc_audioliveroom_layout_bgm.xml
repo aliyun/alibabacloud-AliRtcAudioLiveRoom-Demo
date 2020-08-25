@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="@dimen/alirtc_audioliveroom_margin_18"
+        android:layout_marginRight="@dimen/alirtc_audioliveroom_margin_18"
+        android:id="@+id/rtc_audioliveroom_rcy_bgm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

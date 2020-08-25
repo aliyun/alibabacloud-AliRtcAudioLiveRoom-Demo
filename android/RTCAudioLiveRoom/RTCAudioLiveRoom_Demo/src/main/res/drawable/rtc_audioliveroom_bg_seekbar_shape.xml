@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/alirtc_audioliveroom_margin_4"/>
+            <corners android:radius="@dimen/alirtc_audioliveroom_radius_2"/>
+            <solid android:color="@color/alirtc_audioliveroom_color_bg_seekbar_normal"/>
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <size android:height="@dimen/alirtc_audioliveroom_margin_4"/>
+                <corners android:radius="@dimen/alirtc_audioliveroom_radius_2"/>
+                <solid android:color="@color/alirtc_audioliveroom_color_bg_seekbar_select"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

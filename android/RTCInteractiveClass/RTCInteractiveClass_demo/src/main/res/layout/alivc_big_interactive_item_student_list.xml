@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginRight="@dimen/alivc_biginteractiveclass_margin_10"
+    android:layout_width="@dimen/alivc_biginteractiveclass_width_student_list_90"
+    android:layout_height="@dimen/alivc_biginteractiveclass_width_student_list_90">
+
+    <FrameLayout
+        android:id="@+id/alivc_big_interactive_class_rl_student_preview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/alivc_big_interactive_class_tv_student_name"
+        android:textSize="@dimen/alivc_biginteractiveclass_size_text_12"
+        android:layout_marginLeft="@dimen/alivc_biginteractiveclass_margin_6"
+        android:layout_marginBottom="@dimen/alivc_biginteractiveclass_margin_6"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:textColor="@color/alivc_biginteractiveclass_color_text_black"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/alivc_big_interactive_class_iv_student_mutelocalmic"
+        android:scaleType="centerInside"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/alivc_biginteractiveclass_margin_6"
+        android:layout_marginRight="@dimen/alivc_biginteractiveclass_margin_6"
+        android:layout_width="@dimen/alivc_biginteractiveclass_padding_20"
+        android:layout_height="@dimen/alivc_biginteractiveclass_padding_20"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

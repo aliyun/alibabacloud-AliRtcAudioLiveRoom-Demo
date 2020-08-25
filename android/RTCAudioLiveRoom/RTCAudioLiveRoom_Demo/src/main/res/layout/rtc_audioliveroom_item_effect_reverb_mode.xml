@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:background="@drawable/rtc_audioliveroom_bg_effect_reverb_mode_selector"
+        android:paddingTop="@dimen/alirtc_audioliveroom_margin_2"
+        android:paddingBottom="@dimen/alirtc_audioliveroom_margin_2"
+        android:paddingLeft="@dimen/alirtc_audioliveroom_margin_8"
+        android:paddingRight="@dimen/alirtc_audioliveroom_margin_8"
+        android:gravity="center"
+        android:id="@+id/rtc_audioliveroom_tv_effect_reverb_mode"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/alirtc_audioliveroom_size_text_12"
+        android:textColor="@color/alirtc_audioliveroom_color_text_white"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

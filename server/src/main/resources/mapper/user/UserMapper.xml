@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="com.alivc.user.dao.UserDao">
+
+    <insert id="insertUser">
+	    insert into user (channel_id, user_id, user_name, seat_index)
+	    values
+	    (#{channelId} , #{userid} , #{userName} , #{seatIndex})
+    </insert>
+
+
+    <update id="updateUser">
+		    update user
+		    set seat_index = #{seatIndex}
+		    where channel_id = #{channelId} and user_id = #{userid}
+	    </update>
+
+
+    <update id="updateUserSeatIndex">
+		    update user
+		    set seat_index = #{user.seatIndex}
+		    where  user_id = #{user.userId}
+	    </update>
+
+    <select id="getUserList" resultType="com.alivc.user.pojo.User">
+			SELECT channel_id as channelId, user_id as userId, user_name as userName, seat_index as seatIndex
+			 from user where
+			 channel_id = #{channelId} and seat_index is not null
+		</select>
+
+</mapper>

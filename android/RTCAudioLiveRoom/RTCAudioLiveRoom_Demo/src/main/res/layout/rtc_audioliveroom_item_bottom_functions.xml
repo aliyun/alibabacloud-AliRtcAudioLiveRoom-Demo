@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/alivc_big_interactive_class_iv_bottom_function_icon"
+        android:scaleType="centerInside"
+        android:layout_width="@dimen/alirtc_audioliveroom_height_ll_44"
+        android:layout_height="@dimen/alirtc_audioliveroom_height_ll_44"/>
+
+    <TextView
+        android:id="@+id/alivc_big_interactive_class_tv_bottom_function_name"
+        android:layout_marginTop="@dimen/alirtc_audioliveroom_margin_6"
+        android:textSize="@dimen/alirtc_audioliveroom_size_text_10"
+        android:textColor="@color/alirtc_audioliveroom_color_text_white"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

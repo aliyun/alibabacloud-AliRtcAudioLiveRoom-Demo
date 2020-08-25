@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="functions">
+        <item>静音</item>
+        <item>扬声器</item>
+        <item>背景乐</item>
+        <item>音效</item>
+        <item>调音台</item>
+    </string-array>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/alirtc_audioliveroom_margin_16"
+        android:layout_width="@dimen/rtc_audioliveroom_width_imageview_52"
+        android:layout_height="@dimen/rtc_audioliveroom_width_imageview_52"
+        android:clipChildren="false">
+
+        <com.aliyun.rtc.audiochatroom.view.WaterImageView
+            android:id="@+id/alivc_big_interactive_class_iv_bottom_function_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/rtc_audioliveroom_iv_mute_mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/rtc_audioliveroon_mute_mic"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/alivc_big_interactive_class_tv_bottom_function_name"
+        android:layout_width="@dimen/alirtc_audioliveroom_width_tv_68"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:lines="1"
+        android:gravity="center_horizontal"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/alirtc_audioliveroom_margin_6"
+        android:textColor="@color/alirtc_audioliveroom_color_text_white"
+        android:textSize="@dimen/alirtc_audioliveroom_size_text_10" />
+</LinearLayout>

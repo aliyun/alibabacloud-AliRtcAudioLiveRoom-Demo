@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="@color/rtc_audioliveroom_color_seekbar_thumb"/>
+    <size android:width="@dimen/alirtc_audioliveroom_margin_16" android:height="@dimen/alirtc_audioliveroom_margin_16"/>
+</shape>

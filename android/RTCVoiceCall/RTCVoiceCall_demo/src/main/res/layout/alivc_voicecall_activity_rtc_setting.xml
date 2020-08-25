@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_selector_black"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alivc_voicecall_width_60"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingLeft="@dimen/alivc_voicecall_padding_20"
+            android:text="@string/alivc_voicecall_string_text_setting"
+            android:textSize="@dimen/alivc_voicecall_size_text_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alivc_voicecall_width_60"
+            android:layout_marginTop="@dimen/alivc_voicecall_padding_20"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/alivc_voicecall_padding_20"
+            android:text="@string/alivc_voicecall_string_text_bgm"
+            android:textSize="@dimen/alivc_voicecall_size_text_24" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/alivc_voicecall_rcy_bgm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alivc_voicecall_width_60"
+            android:layout_marginTop="@dimen/alivc_voicecall_padding_20"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/alivc_voicecall_padding_20"
+            android:text="@string/alivc_voicecall_string_text_bg"
+            android:textSize="@dimen/alivc_voicecall_size_text_24" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/alivc_voicecall_rcy_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+</LinearLayout>

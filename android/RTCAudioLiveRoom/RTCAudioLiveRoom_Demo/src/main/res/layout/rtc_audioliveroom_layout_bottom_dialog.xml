@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/alirtc_audioliveroom_color_text_black"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/alirtc_audioliveroom_margin_20"
+    android:minHeight="@dimen/rtc_audioliveroom_height_bottom_dialog_222"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/alirtc_audioliveroom_margin_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rtc_audioliveroom_tv_title_bottom_dialog"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/alirtc_audioliveroom_size_text_18"
+            android:textColor="@color/alirtc_audioliveroom_color_text_white"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:layout_marginRight="@dimen/alirtc_audioliveroom_margin_20"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/rtc_audioliveroom_iv_confrim_bottom_dialog"
+            android:layout_width="@dimen/alirtc_audioliveroom_width_ib_back_32"
+            android:layout_height="@dimen/alirtc_audioliveroom_width_ib_back_32"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/alirtc_audioliveroom_margin_26"
+        android:id="@+id/rtc_audioliveroom_fl_content_bottom_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>

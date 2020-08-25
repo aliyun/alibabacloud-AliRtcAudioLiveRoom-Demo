@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion externalCompileSdkVersion
+
+    defaultConfig {
+        minSdkVersion externalMinSdkVersion
+        targetSdkVersion externalTargetSdkVersion
+        consumerProguardFiles 'proguard-rules.pro'
+        ndk {
+            abiFilters  "armeabi", "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+}
+
+dependencies {
+    implementation externalAndroidAppCompatV7
+    implementation externalAndroidSupportV13
+    implementation externalAndroidSupportV4
+    implementation externalAndroidDesign
+    implementation externalGSON
+    implementation externalOKHTTP
+    implementation project(path: ':RTCSolutionCommon')
+//    implementation project(":alirtcsdk")
+    implementation 'com.aliyun.rtc:AliRTC-Full:1.17.1'
+}

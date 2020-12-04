@@ -13,9 +13,9 @@ pod 'RTCVoiceCall', :path => 'RTCVoiceCall/'
 pod 'RTCInteractiveLiveClass', :path => 'RTCInteractiveLiveClass/' 
 pod 'RTCAudioLiveRoom', :path => 'RTCAudioLiveRoom/' 
 
-pod 'AliRTCSdk', '1.18.0'
+pod 'AliRTCSdk'
 
- pod 'AFNetworking', :git => 'https://github.com/AFNetworking/AFNetworking.git',:tag=>'4.0.1'
+ pod 'AFNetworking', '4.0.1'
 
 #pod 'AliPlayerSDK_iOS', :git => 'https://github.com/aliyunvideo/AliPlayerSDK.git',:tag=>'4.7.4'
 

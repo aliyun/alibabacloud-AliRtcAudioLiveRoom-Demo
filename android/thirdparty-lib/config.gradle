@@ -46,7 +46,7 @@ ext {
     externalMqtt = 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0'
     externalHttpCore = 'org.apache.httpcomponents:httpcore:4.4.1'
 
-    externalRTC = ''
+    externalRTC = 'com.aliyun.rtc:AliRTC-Full:1.18.2006044'
 
     //Android SDK/Tools Version
     externalCompileSdkVersion = 29

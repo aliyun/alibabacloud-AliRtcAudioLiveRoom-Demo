@@ -56,8 +56,6 @@ apply plugin: 'com.android.application'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project (':RTCSolutionCommon')
-    implementation project (':RTCInteractiveClass:RTCInteractiveClass_demo')
-    implementation project (':RTCVoiceCall:RTCVoiceCall_demo')
     implementation project (':RTCAudioLiveRoom:RTCAudioLiveRoom_Demo')
     implementation externalAndroidAppCompatV7
     implementation externalAndroidSupportV4

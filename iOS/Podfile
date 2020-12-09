@@ -9,8 +9,8 @@ target 'RTCSolution' do
   # Pods for RTCSolution
 pod 'RTCCommon', :path => 'RTCCommon/' 
 pod 'RTCCommonView', :path => 'RTCCommonView/' 
-pod 'RTCVoiceCall', :path => 'RTCVoiceCall/' 
-pod 'RTCInteractiveLiveClass', :path => 'RTCInteractiveLiveClass/' 
+#pod 'RTCVoiceCall', :path => 'RTCVoiceCall/' 
+#pod 'RTCInteractiveLiveClass', :path => 'RTCInteractiveLiveClass/' 
 pod 'RTCAudioLiveRoom', :path => 'RTCAudioLiveRoom/' 
 
 pod 'AliRTCSdk'

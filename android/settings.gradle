@@ -1,6 +1,4 @@
 include ':app'
 include ':RTCSolutionCommon'
 include ':RTCViewCommon'
-include ':RTCInteractiveClass:RTCInteractiveClass_demo'
-include ':RTCVoiceCall:RTCVoiceCall_demo'
 include ':RTCAudioLiveRoom:RTCAudioLiveRoom_Demo'

@@ -15,8 +15,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.aliyun.rtc.audiochatroom.ui.RtcJoinChannelActivity;
-import com.aliyun.rtc.interactiveclassplayer.ui.AlivcJoinChannelActivity;
-import com.aliyun.rtc.voicecall.ui.AliyunRtcLoginActivity;
 import com.aliyun.svideo.common.utils.PermissionUtils;
 import com.aliyun.svideo.common.utils.upgrade.AutoUpgradeClient;
 
@@ -25,12 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView mRcyModelList;
     private int[] mModelIconList = new int[]{
-            R.drawable.icon_voice_call_solo, R.drawable.icon_interactive_class,
             R.drawable.icon_audio_live_room
     };
 
     private int[] mModelNameList = new int[]{
-            R.string.string_voice_call_solo_name, R.string.string_interactive_class_name,
             R.string.string_audio_live_room_name
     };
 
@@ -41,8 +37,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int PERMISSION_REQUEST_CODE = 666;
     private Class[] mModelMainActivitys = new Class[]{
-            AliyunRtcLoginActivity.class,
-            AlivcJoinChannelActivity.class,
             RtcJoinChannelActivity.class
     };
 
@@ -55,8 +49,6 @@ public class MainActivity extends AppCompatActivity {
         boolean b = PermissionUtils.checkPermissionsGroup(MainActivity.this, mPermissions);
         if (!b){
             PermissionUtils.requestPermissions(MainActivity.this, mPermissions, PERMISSION_REQUEST_CODE);
-        }else{
-            checkUpdate();
         }
     }
 
@@ -71,14 +63,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == PERMISSION_REQUEST_CODE){
-            checkUpdate();
-        }
     }
 
-    private void checkUpdate() {
-        AutoUpgradeClient.checkUpgrade(MainActivity.this, "/versionProduct/installPackage/RTC_Solution/RTCAudioLiveRoom.json", BuildConfig.VERSION_CODE);
-    }
 
     private class ModelAdapter extends RecyclerView.Adapter {
         @Override

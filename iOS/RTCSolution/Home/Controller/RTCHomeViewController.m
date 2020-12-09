@@ -310,7 +310,7 @@ static CGFloat lableDevideToTop = 44; //阿里云视频label距离顶部的距�
     
     //功能配置
     
-    NSInteger shouldAddValue = 0b111;
+    NSInteger shouldAddValue = 0b100;
                                
     
     for (int i = 0; i < 16; i ++) {
